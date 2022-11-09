@@ -1,8 +1,8 @@
 terraform {
   backend "s3" {
-    bucket         = "tikal-terraform-state"
-    region         = "eu-central-1"
-    dynamodb_table = "TikalTerraformStatelock"
-    key            = "main/terraform-tikal.tfstate"
+    bucket         = "sunil-terraform-state"
+    region         = "ap-south-1"
+    dynamodb_table = "Tablefortfstatelock"
+    key            = "main/terraform.tfstate"
   }
 }
