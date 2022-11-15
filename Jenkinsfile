@@ -26,7 +26,7 @@ pipeline {
 
 		choice (name: 'AWS_REGION',
 				choices: ['ap-south-1','us-west-1', 'us-west-2'],
-				description: 'Pick A regions defaults to eu-central-1')
+				description: 'Pick A regions defaults to ap-south-1')
 		string (name: 'ENV_NAME',
 			   defaultValue: 'tf-customer1',
 			   description: 'Env or Customer name')
@@ -49,7 +49,7 @@ pipeline {
 							[ $class: 'AmazonWebServicesCredentialsBinding',
 								accessKeyVariable: 'AWS_ACCESS_KEY_ID',
 								secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
-								credentialsId: 'Tikal-AWS-access',
+								credentialsId: 'AWSCred',
 								]])
 							{
 							try {
@@ -91,7 +91,7 @@ pipeline {
 								[ $class: 'AmazonWebServicesCredentialsBinding',
 									accessKeyVariable: 'AWS_ACCESS_KEY_ID',
 									secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
-									credentialsId: 'Tikal-AWS-access',
+									credentialsId: 'AWSCred',
 									]])
 								{
 								try {
@@ -125,7 +125,7 @@ pipeline {
 								[ $class: 'AmazonWebServicesCredentialsBinding',
 									accessKeyVariable: 'AWS_ACCESS_KEY_ID',
 									secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
-									credentialsId: 'Tikal-AWS-access',
+									credentialsId: 'AWSCred',
 									]])
 								{
 								try {
@@ -172,7 +172,7 @@ pipeline {
 								[ $class: 'AmazonWebServicesCredentialsBinding',
 									accessKeyVariable: 'AWS_ACCESS_KEY_ID',
 									secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
-									credentialsId: 'Tikal-AWS-access',
+									credentialsId: 'AWSCred',
 									]])
 								{
 								try {
