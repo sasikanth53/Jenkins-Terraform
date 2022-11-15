@@ -4,9 +4,12 @@ variable "bootstrap" {
 }
 
 variable "operators" {
-  type = list(string)
+  type = string
+  default = "shasi008@gmail.com"
 }
 
 variable "bucket" {}
 variable "dynamodb_table" {}
-variable "region" {}
+variable "region" {
+        default     = "ap-south-1"
+}
