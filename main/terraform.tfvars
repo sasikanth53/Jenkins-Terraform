@@ -16,6 +16,6 @@ vpc_cidr_block          = "10.0.58.0/23"
 profiling_vpc_id        = "vpc-0a38eadcd884e724d"
 profiling_vpc_cdir      = "10.16.0.0/16"
 operators = [
-  "natanb",
+  "shasi008@gmail.com",
 ]
 WORKSPACE                  = "."
