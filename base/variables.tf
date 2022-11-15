@@ -24,7 +24,7 @@ variable "dynamodb_table" {
 }
 
 variable "operators" {
-  type        = "list"
+  type        =  list(string)
   description = "List of IAM users to grant access to state"
 }
 
